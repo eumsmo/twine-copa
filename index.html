@@ -11,7 +11,9 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play 18 dias para a final.</tw-noscript></noscript></tw-story>
 <tw-storydata name="18 dias para a final" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="18A1506F-1E43-464F-B09D-5E2E545DC82C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="dia 03/06" tags="" position="125,1150" size="100,100">(set: $inteligencia to 0)
 (set: $vezesSaidas to 0)
-Dia 03/06/1970 
+
+18 dias para a final
+
 
 Você acorda de manhã com barulhos de festa vindo da rua  
 
@@ -65,7 +67,7 @@ Você solta um suspiro forte, “Nem no dia da copa” Você pensa, antes de se 
 
 Seu pai corre pra sala e liga a televisão “Já tá começando, filhão”
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo0306.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/jogo0306.jpeg&quot;&gt;
 
 Vocês assistem o jogo, aos 30 do segundo tempo, vocês escutam a sua mãe voltando com as compras. ” Muito obrigado pela ajuda!” Seu pai está fissurado demais no jogo para notar. “Amor, encontrei o seu irmão na volta” Ele não escuta  
 
@@ -74,7 +76,7 @@ Vocês assistem o jogo, aos 30 do segundo tempo, vocês escutam a sua mãe volta
 
 Você tenta lembrar ao sair de casa, o caminho é curto, nem uma criança poderia esquecer, no caminho você passa perto de um beco escuro, onde você sempre vê homens assustadores indo, você tenta não encarar nenhum deles enquanto passa...
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/beco0306.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/beco0306.jpeg&quot;&gt;
 
 [[Mercado]]</tw-passagedata><tw-passagedata pid="10" name="Cutucar ele" tags="" position="1100,600" size="100,100">“oi amor?” seu pai vira pra sua mãe rapidamente, preocupado em não perder um segundo do jogo 
 
@@ -90,7 +92,7 @@ Quando sua mãe sai, você volta a sua atenção pro jogo, quinze minutos depois
 Quando sua mãe sai, você volta a sua atenção pro jogo, quinze minutos depois o árbitro apita o final do jogo. 4 a 1 pro Brasil. Quase que ao mesmo tempo,  o seu solta um grito ensurdecedor “VAI BRASIL! VAI BRASIL! VAI BRASIL! 
 
 [[VAI BRASIL]]
-[[Ficar quieto]] </tw-passagedata><tw-passagedata pid="12" name="Mercado" tags="" position="1100,1500" size="100,100">&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/mercado0306.jpeg&quot;&gt;
+[[Ficar quieto]] </tw-passagedata><tw-passagedata pid="12" name="Mercado" tags="" position="1100,1500" size="100,100">&lt;img src=&quot;./imgs/mercado0306.jpeg&quot;&gt;
 
 No mercado você fica encantado com tudo mas espera... o que era para comprar mesmo? 
 (set:$compraCerta to 0) (set: $vezesSaidas to 1)
@@ -156,17 +158,17 @@ Você entra em casa com as compras
 
 Muito mais calma, sua mãe pergunta “Você fez as compras?” você passa a sacola pra sua mãe, ela olha dentro 
 
-(Se acertou tudo) 
-
+(if: $compraCerta is 3)[
 “Certinho filho, obrigada” ela te dá um beijinho na testa 
-
-(Se errou algo)  
-
+](else:)[
 “ Pó vacilou hein, menino?” 
+]
 
 Depois do jantar, você vai dormir 
 
-[[Você vai para a cama]] </tw-passagedata><tw-passagedata pid="24" name="Você vai para a cama" tags="" position="2300,800" size="100,100">Você acorda com o som de batidas na sua porta, o que parecia uma longa noite de sono parece ter sido longa demais. “Oh, filhão, acorda aí, seu tio veio visitar” Você saí da cama lenta e esfomeadamente, o roncar do seu estômago ecoa pelo seu quarto e pelos corredores enquanto você vai pra cozinha, seu tio e seu pai estão sentados envolta da mesa, e a sua mãe está servindo almoço para os dois, “Esse moleque dorme demais, que isso”, você pede benção pro seu tio. “É dia de jogo do Brasil, deixa ele” seu pai intervém, “Hmph, dia de jogo do Brasil, se você soubesse o que tá acontecendo no país....” “Ah, lá vem” Seu pai retruca “Lá vem mesmo! É absurdo o que-” 
+[[Você vai para a cama]] </tw-passagedata><tw-passagedata pid="24" name="Você vai para a cama" tags="" position="2300,800" size="100,100">14 dias para a final
+
+Você acorda com o som de batidas na sua porta, o que parecia uma longa noite de sono parece ter sido longa demais. “Oh, filhão, acorda aí, seu tio veio visitar” Você saí da cama lenta e esfomeadamente, o roncar do seu estômago ecoa pelo seu quarto e pelos corredores enquanto você vai pra cozinha, seu tio e seu pai estão sentados envolta da mesa, e a sua mãe está servindo almoço para os dois, “Esse moleque dorme demais, que isso”, você pede benção pro seu tio. “É dia de jogo do Brasil, deixa ele” seu pai intervém, “Hmph, dia de jogo do Brasil, se você soubesse o que tá acontecendo no país....” “Ah, lá vem” Seu pai retruca “Lá vem mesmo! É absurdo o que-” 
 
 Sua mãe entra no cozinha, limpando a garganta de uma maneira nem um pouco sutil 
 
@@ -217,7 +219,7 @@ Você vai pra sala, exausto por realizar um quinto das tarefas da sua mãe, seu 
 (set: $levouGuardaChuva to true)
 “Obrigada, menino, aqui” Sua mãe te entrega o guarda-chuva e você corre pra fora, determinado a realizar a sua missão não tão urgente,  você pensa em onde ele pode estar, qual caminho ele pode ter pego e- BAM. Você se distrai tanto com os seus pensamentos que você tromba nas costas do seu tio. “Missão cumprida!” você pensa enquanto ele te ajuda a levantar 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/tio0706.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/tio0706.jpeg&quot;&gt;
 
 “Esse é meu sobrinho, eu tava na casa do pai dele, meu irmão” ele fala, olhando para a direção contraria a você, tem um homem alto e forte na frente dele, você percebe. “E você não vai ver o jogo do Brasil não?” a voz dele é grossa e a cara fechada “Não gosto de futebol” seu tio responde sem hesitação. O homem olha o seu tio da cabeça aos pés “Volta pra sua casa rápido” ele entra no beco assustador. Seu tio se vira pra você “Tudo bem aí, campeão? Você tomou um tombo” 
 
@@ -225,19 +227,21 @@ Você vai pra sala, exausto por realizar um quinto das tarefas da sua mãe, seu 
 [[Quem era aquele?]] </tw-passagedata><tw-passagedata pid="36" name="Ficar e ver o jogo" tags="" position="4000,800" size="100,100">(set: $levouGuardaChuva to false)
 “Será que eu tenho que fazer tudo nessa casa?” sua mãe exclama furiosamente e bate a porta ao sair com o guarda-chuva em mãos. Você e seu pai assistem atentamente o jogo, foi disputado, mas o Brasil conseguiu ganhar de um a zero da Inglaterra, depois da janta... espera, quando a sua mãe voltou? Você devia estar focado demais pra perceber, depois da janta você tenta dormir, mas a emoção da vitória dificulta o sono 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo0706.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/jogo0706.jpeg&quot;&gt;
 
 [[Tentar dormir]]</tw-passagedata><tw-passagedata pid="37" name="Tô bem, tio" tags="" position="4200,900" size="100,100">“Que bom, esse guarda-chuva é meu?” você entrega o guarda-chuva pra ele “Esse era o motivo da corrida? Muito obrigado, campeão, agora volta pra casa, vai, já tá tarde” Você volta pra casa, a exaustão da corrida é o suficiente pra te nocautear pelo resto da noite, nem os fogos, comemorando a vitória do Brasil conseguem te acordar
 
-[[Dia 10/06]] 
+[[Dormir feito uma pedra|Dia 10/06]] 
 
 </tw-passagedata><tw-passagedata pid="38" name="Quem era aquele?" tags="" position="4200,1100" size="100,100">“É difícil de explicar, campeão, mas... tem coisas ruins acontecendo no país e... deixa quieto, beleza?” Você entrega o guarda chuva pra ele “É por isso que você tava correndo? Valeu, campeão! Agora volta pra casa, já tá tarde” Você volta pra casa, a exaustão da corrida é o suficiente pra te nocautear pelo resto da noite, nem os fogos, comemorando a vitória do Brasil conseguem te acordar
 
-[[Dia 10/06]] </tw-passagedata><tw-passagedata pid="39" name="Dia 10/06" tags="" position="4400,900" size="100,100">Você levanta da cama rapidamente , é o dia que você combinou de jogar bola na rua com os seus amigos, você corre pra cozinha para se energizar, seu pai está tomando café e lendo o jornal como sempre “Que animo é esse, filhão?” 
+[[Dormir feito uma pedra|Dia 10/06]] </tw-passagedata><tw-passagedata pid="39" name="Dia 10/06" tags="" position="4400,900" size="100,100">11 dias para a final
+
+Você levanta da cama rapidamente , é o dia que você combinou de jogar bola na rua com os seus amigos, você corre pra cozinha para se energizar, seu pai está tomando café e lendo o jornal como sempre “Que animo é esse, filhão?” 
 
 [[Vou jogar bola hoje]] </tw-passagedata><tw-passagedata pid="40" name="Tentar dormir" tags="" position="4200,700" size="100,100">Baixinho, no silêncio da noite, você consegue ouvir do outro lado da parede “amor, eu tô preocupado com ele, tinha um soldado militar abordando ele. A gente devia conversar com ele, e se alguém machucar ele?” A sua mãe diz as ultimas duas palavras ainda mais baixo do que as outras “Não caí nesse papinhos do contra dele, ele reclama de tudo!” seu pai parece cansado de falar do próprio irmão “É que ele me contou umas coisas, e...” Finalmente, seus olhos começam a se fechar sozinhos, em segundos você está apagado 
 
-[[Dia 10/06]] 
+[[Dormir tranquilamente|Dia 10/06]] 
 </tw-passagedata><tw-passagedata pid="41" name="Vou jogar bola hoje" tags="" position="4600,900" size="100,100">“Você sabe que hoje tem jogo do Brasil, né?” 
 
 [[Eu sei]] 
@@ -250,17 +254,19 @@ Você vai pra sala, exausto por realizar um quinto das tarefas da sua mãe, seu 
 [[Assistir o jogo]]
 [[Jogar bola]] </tw-passagedata><tw-passagedata pid="44" name="Assistir o jogo" tags="" position="5000,800" size="100,100">A copa só acontece a cada quatro anos, por que perder o jogo do Brasil? Você fica em casa o dia inteiro,  umas duas vezes durante o jogo pensa ter escutado a porta abrindo, mas quem se importa? O Brasil ganhou de novo, de três a dois da Romênia. 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo1006.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/jogo1006.jpeg&quot;&gt;
 
 No meio dos abraços e da celebração a sua mãe entra na sala “Alguém percebeu que eu saí?” o silencio diz mil palavras “Muito bom saber que eu sou valorizada aqui, ah, o seu irmão mandou um abraço, não que você se importe com a sua família” não tem jantar essa noite, você vai dormir de estômago vazio 
 
-[[Dia 14/06]] </tw-passagedata><tw-passagedata pid="45" name="Jogar bola" tags="" position="5000,1000" size="100,100">(set: $vezesSaidas to ($vezesSaidas+1))
+[[Pelo menos o Brasil ganhou|Dia 14/06]] </tw-passagedata><tw-passagedata pid="45" name="Jogar bola" tags="" position="5000,1000" size="100,100">(set: $vezesSaidas to ($vezesSaidas+1))
 “Que pena, mas boa sorte” você saí de casa animado, no final da rua você consegue ver o pessoal se organizando, com alguns pais observando de longe, você corre pra galera. Depois dos times serem separados, vocês se posicionam no campo, os pais semi-interessados são equivalentes à torcida da copa, a partida começa, seu parceiro de equipe rola a bola pra você. Você vira para a equipe rival com determinação e começa a correr na direção do gol, um dos zagueiros entra na sua frente, do outro lado você vê o seu parceiro livre
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/futebol1006.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/futebol1006.jpeg&quot;&gt;
 
 [[Tocar a bola]] 
-[[Cortar pra esquerda]] </tw-passagedata><tw-passagedata pid="46" name="Dia 14/06" tags="" position="6400,900" size="100,100">Mais uma vez, você acorda tarde demais, já no horário do almoço e do jogo do Brasil, quartas de final contra o Peru. Depois de almoçar, bem no momento que a bola é rolada, você ouve a sua mãe do outro lado da casa “Menino, vem aqui!” 
+[[Cortar pra esquerda]] </tw-passagedata><tw-passagedata pid="46" name="Dia 14/06" tags="" position="6400,900" size="100,100">7 dias para a final
+
+Mais uma vez, você acorda tarde demais, já no horário do almoço e do jogo do Brasil, quartas de final contra o Peru. Depois de almoçar, bem no momento que a bola é rolada, você ouve a sua mãe do outro lado da casa “Menino, vem aqui!” 
 
 [[Ir]]
 [[Ignorar|Ignorar2]] </tw-passagedata><tw-passagedata pid="47" name="Cortar pra esquerda" tags="" position="5200,1100" size="100,100">Você corta precisamente pra esquerda e deixa o zagueiro comendo poeira, mais um vem pra cima, muito mais agressivo 
@@ -301,7 +307,7 @@ Ele vai na direção da discussão e para em frente aos dois homens, após algun
 
 [[Voltar pra casa|Voltar pra casa2]] </tw-passagedata><tw-passagedata pid="56" name="Voltar pra casa2" tags="" position="6200,1000" size="100,100">Você volta suado e exausto pra casa, depois de um banho você desmaia na cama 
 
-[[Dia 14/06]] </tw-passagedata><tw-passagedata pid="57" name="Ir" tags="" position="6600,1000" size="100,100">Você vai ao quarto do seus pais, seu pescoço quase torcendo enquanto você tenta ver mais um pouco do jogo “Acabou o papel higiênico, você pode buscar mais?” 
+[[Mas que cama confortavel|Dia 14/06]] </tw-passagedata><tw-passagedata pid="57" name="Ir" tags="" position="6600,1000" size="100,100">Você vai ao quarto do seus pais, seu pescoço quase torcendo enquanto você tenta ver mais um pouco do jogo “Acabou o papel higiênico, você pode buscar mais?” 
 
 [[Comprar papel higiênico]] 
 [[Ver o jogo]] </tw-passagedata><tw-passagedata pid="58" name="Ignorar2" tags="" position="6600,800" size="100,100">Sua mãe entra na cozinha, com fumaça saindo das orelhas “Eu tô cansada dessa copa já!” ela exclama “Menino, eu preciso que você vá comprar mais papel higiênico” 
@@ -315,29 +321,31 @@ Você percebe que ele não tem aparecido. “não deve ser nada” você pensa e
 (if: $vezesSaidas &gt;= 2)[
 Mas você não consegue parar de pensar que tem algo de estranho com o seu tio, talvez você devesse investigar.
 
-[[Dia 15/06]] 
+[[Espero que ele esteja bem|Dia 15/06]] 
 ] (else:)[
-[[Dia 17/06]] 
+[[Mal posso esperar pelo próximo jogo|Dia 17/06]] 
 ]</tw-passagedata><tw-passagedata pid="60" name="Ver o jogo" tags="" position="6800,800" size="100,100">Quartas de final, como você poderia perder? Sua mãe saí de casa sem dizer uma palavra, gol após gol você torce em algum momento a sua mãe chega “Amor, você ouvido do seu irmão? Ele tá sumido”  seu pai responde, ainda vidrado na televisão: “Não é nada não, ele faz isso as vezes”   
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo1406.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/jogo1406.jpeg&quot;&gt;
 
 “Não sei não, viu, eu tô com um mau pressentimento” sua mãe aguarda resposta, mas seu pai não está mais prestando atenção, ela vai pro quarto. O Brasil é classificado pra semifinal!  Você toma um banho relaxante, janta e deita pra dormir. 
 
 (if: $vezesSaidas &gt;= 2)[
 Mas você não consegue parar de pensar que tem algo de estranho com o seu tio, talvez você devesse investigar.
 
-[[Dia 15/06]] 
+[[Espero que ele esteja bem|Dia 15/06]] 
 ] (else:)[
-[[Dia 17/06]] 
+[[Mal posso esperar pelo próximo jogo|Dia 17/06]] 
 ]</tw-passagedata><tw-passagedata pid="61" name="Dia 15/06" tags="" position="7000,900" size="100,100"> Você acorda mais cedo que os seus pais, preocupado com o seu tio. Você decide tentar encontra-lo, 
 
 Você pensa em se alimentar primeiro, mas talvez você acorde seus pais 
 
 [[Comer]]
-[[Sair]] </tw-passagedata><tw-passagedata pid="62" name="Dia 17/06" tags="" position="7400,700" size="100,100">Você acorda animado para ver o jogo das semifinais, Brasil contra Uruguai, depois de fazer o de costume você se prepara para ver o jogo
+[[Sair]] </tw-passagedata><tw-passagedata pid="62" name="Dia 17/06" tags="" position="7400,700" size="100,100">4 dias para a final
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo1706.jpeg&quot;&gt;
+Você acorda animado para ver o jogo das semifinais, Brasil contra Uruguai, depois de fazer o de costume você se prepara para ver o jogo
+
+&lt;img src=&quot;./imgs/jogo1706.jpeg&quot;&gt;
 
 (if: $vezesSaidas == 0)[
 (set: $final to 1)
@@ -349,7 +357,7 @@ Você assiste tudo e que festa! Três a um! O Brasil vai pra final, depois do jo
 Você assiste tudo com os seus pais e que festa! Três a um! O Brasil vai pra final, depois do jogo, vocês celebram com uma janta fantástica e vão dormir 
 ]
 
-[[Dia 21/06]] </tw-passagedata><tw-passagedata pid="63" name="Sair" tags="" position="7000,1100" size="100,100"> Você saí de casa, o sol ainda está levantando e a rua está completamente vazia “pra onde eu vou?” 
+[[A final nunca esteve tão próxima|Dia 21/06]] </tw-passagedata><tw-passagedata pid="63" name="Sair" tags="" position="7000,1100" size="100,100"> Você saí de casa, o sol ainda está levantando e a rua está completamente vazia “pra onde eu vou?” 
  
  [[Casa do tio]] 
  (if: $levouGuardaChuva)[
@@ -370,9 +378,9 @@ Você assiste tudo com os seus pais e que festa! Três a um! O Brasil vai pra fi
 A sala do apartamento está organizada, talvez até demais, seu tio não é do tipo que arruma casa, e ele é solteiro... algo de errado não está certo. 
 
 [[Olhar no quarto]]
-[[Olhar no lixo]] </tw-passagedata><tw-passagedata pid="69" name="Ir embora" tags="" position="7000,1500" size="100,100">Isso é assustador demais pra você (COVARDE!), você volta pra casa e deixa a investigação de lado 
+[[Olhar no lixo]] </tw-passagedata><tw-passagedata pid="69" name="Ir embora" tags="" position="7000,1500" size="100,100">Isso é assustador demais pra você, você volta pra casa e deixa a investigação de lado 
 
-[[Dia 17/06]] </tw-passagedata><tw-passagedata pid="70" name="Olhar no quarto" tags="" position="7100,1900" size="100,100">(set: $olhouQuarto to true)
+[[É melhor não me meter onde não fui chamado|Dia 17/06]] </tw-passagedata><tw-passagedata pid="70" name="Olhar no quarto" tags="" position="7100,1900" size="100,100">(set: $olhouQuarto to true)
 Você entra no quarto do seu tio, ele está ainda mais organizado que a sala 
 
 [[Olhar a mesinha]] 
@@ -413,18 +421,20 @@ Você escuta passos no corredor “É esse apartamento aqui” os passos se apro
 [[Beco assustador|Beco assustador2]] </tw-passagedata><tw-passagedata pid="80" name="Continuar" tags="" position="7300,1200" size="100,100">(set: $final to 2)
 Você se força a avançar, quem sabe o seu tio está aqui? enquanto você avança, você percebe que todas as celas estão abertas, tem uma sala com um portão maior no final do corredor. Você se aproxima lentamente, quase paralisado, sem saber se os sons de ratos são reais ou não, você não tem certeza se esse lugar é real. No final do corredor você abre a porta. Mais uma sala vazia, mas esta não tem nenhuma cama, ou privada, só correntes e um balde e- você vacila ao perceber, mas no canto da sala, você avista o guarda-chuva de seu tio. 
 
-[[Dia 21/06]] </tw-passagedata><tw-passagedata pid="81" name="Recuar" tags="" position="7300,1000" size="100,100">Isso é demais pra você, você volta pra casa, desistindo da investigação 
+[[Ir para a final|Dia 21/06]] </tw-passagedata><tw-passagedata pid="81" name="Recuar" tags="" position="7300,1000" size="100,100">Isso é demais pra você, você volta pra casa, desistindo da investigação 
 
-[[Dia 17/06]] </tw-passagedata><tw-passagedata pid="82" name="Dia 21/06" tags="" position="7600,700" size="100,100">(if: $final is 0)[
+[[É melhor não me meter onde não fui chamado|Dia 17/06]] </tw-passagedata><tw-passagedata pid="82" name="Dia 21/06" tags="" position="7600,700" size="100,100">0 dias para a final
+
+(if: $final is 0)[
 O dia da final chegou, você, sua mãe e seu pai se juntam contentes para assistir o jogo, animados vocês testemunham a conquista do tri do Brasil, ainda assim, você sente que algo está faltando
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106mae.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/jogo2106mae.jpeg&quot;&gt;
 
 Fim.
 ](else-if: $final is 1)[
 Você viu sua mãe pela última vez três dias atras, ela entrou no seu quarto de manhã e beijou a sua testa, achando que você estava dormindo. Seu pai te disse que ela e seu tio fugiram juntos, mas você sente que esse não é o caso, ela não faria isso. De qualquer maneira é o dia da final, com um gosto agridoce na boca, você e seu pai testemunham a conquista do tri. Você só consegue torcer para que sua mãe também esteja comemorando, mas uma parte de você sabe que ela não está 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/jogo2106.jpeg&quot;&gt;
 
 Fim 
 ](else-if: $final is 2)[
@@ -432,7 +442,7 @@ Fim
 
 O Brasil é tri 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106mae.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/jogo2106mae.jpeg&quot;&gt;
 
 Fim 
 ](else:)[
@@ -440,23 +450,23 @@ Sem respostas, e sem o seu tio, você assiste o jogo, talvez ele esteja em outro
 
 O Brasil é tri 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106mae.jpeg&quot;&gt;
+&lt;img src=&quot;./imgs/jogo2106mae.jpeg&quot;&gt;
 
 Fim 
 ]</tw-passagedata><tw-passagedata pid="83" name="Beco assustador2" tags="" position="7600,1100" size="100,100">Esse beco sempre te assustou, e o homem que estava falando com o seu tio foi pra lá, você tem um pressentimento que é lá que você precisa ir, não tem ninguém na porta, você entra e vê algo ainda mais assustador do que a sua imaginação: Celas imundas em ambos os lados de um corredor sujo, todas vazias.  
 
 [[Recuar|Recuar2]] [[Continuar|Continuar2]] </tw-passagedata><tw-passagedata pid="84" name="Recuar2" tags="" position="7600,900" size="100,100">Isso é demais pra você, você volta pra casa, desistindo da investigação 
 
-[[Dia 21/06]] </tw-passagedata><tw-passagedata pid="85" name="Continuar2" tags="" position="7800,1000" size="100,100">Você se força a avançar, quem sabe o seu tio está aqui? enquanto você avança, você percebe que todas as celas estão abertas, tem uma sala com um portão maior no final do corredor. Você se aproxima lentamente, quase paralisado, sem saber se os sons de ratos são reais ou não, você não tem certeza se esse lugar é real. No final do corredor você abre a porta. Mais uma sala vazia, mas esta não tem nenhuma cama, ou privada, só correntes e um balde. Ele não está aqui, mas onde- Você escuta a porta da entrada sendo aberta, você precisa se esconder
+[[É melhor não me meter onde não fui chamado|Dia 21/06]] </tw-passagedata><tw-passagedata pid="85" name="Continuar2" tags="" position="7800,1000" size="100,100">Você se força a avançar, quem sabe o seu tio está aqui? enquanto você avança, você percebe que todas as celas estão abertas, tem uma sala com um portão maior no final do corredor. Você se aproxima lentamente, quase paralisado, sem saber se os sons de ratos são reais ou não, você não tem certeza se esse lugar é real. No final do corredor você abre a porta. Mais uma sala vazia, mas esta não tem nenhuma cama, ou privada, só correntes e um balde. Ele não está aqui, mas onde- Você escuta a porta da entrada sendo aberta, você precisa se esconder
 
 [[Ir pro corredor]]  (if: $inteligencia &gt;= 2)[(O corredor é reto, quem estiver entrando com certeza vai te ver)]
 [[Atrás da porta]]  (if: $inteligencia &gt;= 2)[(Talvez, só talvez, você consiga não ser visto)]</tw-passagedata><tw-passagedata pid="86" name="Ir pro corredor" tags="" position="7800,800" size="100,100">Você saí para o corredor, o mesmo homem que estava no apartamento está entrando vocês fazem contato visual por alguns momentos, o olhar assustador dele é o suficiente para te paralisar, Ele corre até você e te agarra pelo braço “Isso aqui não é lugar de criança!” ele te leva pra fora e te obriga a dizer onde você mora. Ele te deixa com os seus pais, depois de dar uma bronca neles e em você 
 
-[[Dia 21/06]] </tw-passagedata><tw-passagedata pid="87" name="Atrás da porta" tags="" position="8000,1000" size="100,100">Os passos se tornam cada vez mais pesados, a porta abre, quase encostando em você. Você percebe que este é o mesmo homem que estava no apartamento, ele está de costas 
+[[Ir para a final|Dia 21/06]] </tw-passagedata><tw-passagedata pid="87" name="Atrás da porta" tags="" position="8000,1000" size="100,100">Os passos se tornam cada vez mais pesados, a porta abre, quase encostando em você. Você percebe que este é o mesmo homem que estava no apartamento, ele está de costas 
 
 [[Correr|Correr2]] </tw-passagedata><tw-passagedata pid="88" name="Correr2" tags="" position="8000,800" size="100,100">Você consegue escapar daquele lugar horrendo. “Onde está o meu tio?” é a única pergunta na sua mente. Não tem outro lugar onde ele pode estar, essa missão não valeu de nada, você volta pra casa 
 
-[[Dia 21/06]] </tw-passagedata><tw-passagedata pid="89" name="Tirar só da frente" tags="" position="3000,1100" size="100,100">Com certeza a sua mãe vai entender, você tentou! 
+[[Ir para a final|Dia 21/06]] </tw-passagedata><tw-passagedata pid="89" name="Tirar só da frente" tags="" position="3000,1100" size="100,100">Com certeza a sua mãe vai entender, você tentou! 
 
 [[Segunda tarefa]] </tw-passagedata><tw-passagedata pid="90" name="Pegar uma cadeira" tags="" position="3000,700" size="100,100">(set: $fazerOMinimo to 1)
 Um toque de esforço com certeza vai te garantir um pouco de sorvete extra como sobremesa 
