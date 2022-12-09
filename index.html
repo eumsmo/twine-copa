@@ -95,23 +95,25 @@ Quando sua mãe sai, você volta a sua atenção pro jogo, quinze minutos depois
 No mercado você fica encantado com tudo mas espera... o que era para comprar mesmo? 
 (set:$compraCerta to 0) (set: $vezesSaidas to 1)
 [[Espigas de milho]] ou [[Dentes de alho]]</tw-passagedata><tw-passagedata pid="13" name="Dentes de alho" tags="" position="1300,1600" size="100,100">Ah sim, ela claramente disse [nome]. Talvez você tivesse esquecido esta, mas o próximo item na lista claramente eram beringelas... mas quantas que eram mesmo? 
+(set:$escolha1 to &quot;Alho&quot;)
 
 [[Pegar três beringelas]] ou [[pegar seis beringelas]] </tw-passagedata><tw-passagedata pid="14" name="Espigas de milho" tags="" position="1300,1400" size="100,100">Ah sim, ela claramente disse [nome]. Talvez você tivesse esquecido esta, mas o próximo item na lista claramente eram beringelas... mas quantas que eram mesmo? 
 (set:$compraCerta to ($compraCerta+1))
+(set:$escolha1 to &quot;Milho&quot;)
 
 [[Pegar três beringelas]] ou [[pegar seis beringelas]] </tw-passagedata><tw-passagedata pid="15" name="Pegar três beringelas" tags="" position="1500,1600" size="100,100">Certo, agora que terminamos com os vegetais, hora de pegar o leite. 
 (set:$compraCerta to ($compraCerta+1))
 
 [[Pegar leite Molico]] ou [[Pegar leite Morito]] </tw-passagedata><tw-passagedata pid="16" name="pegar seis beringelas" tags="" position="1500,1400" size="100,100">Certo, agora que terminamos com os vegetais, hora de pegar o leite. 
 
-[[Pegar leite Molico]] ou [[Pegar leite Morito]] </tw-passagedata><tw-passagedata pid="17" name="Pegar leite Molico" tags="" position="1700,1600" size="100,100">{Escolha1}, beringela e leite. Acho que isso é tudo. 
+[[Pegar leite Molico]] ou [[Pegar leite Morito]] </tw-passagedata><tw-passagedata pid="17" name="Pegar leite Molico" tags="" position="1700,1600" size="100,100">$escolha1, beringela e leite. Acho que isso é tudo. 
 
 Pera, falta alguma coisa... 
 (set:$compraCerta to ($compraCerta+1))
 [[Pegar pães]]
 [[Pegar broa]] 
 [[Pegar doces]]
-</tw-passagedata><tw-passagedata pid="18" name="Pegar leite Morito" tags="" position="1700,1400" size="100,100">{Escolha1}, beringela e leite. Acho que isso é tudo. 
+</tw-passagedata><tw-passagedata pid="18" name="Pegar leite Morito" tags="" position="1700,1400" size="100,100">$escolha1, beringela e leite. Acho que isso é tudo. 
 
 Pera, falta alguma coisa... 
 
@@ -416,13 +418,13 @@ Você se força a avançar, quem sabe o seu tio está aqui? enquanto você avan�
 [[Dia 17/06]] </tw-passagedata><tw-passagedata pid="82" name="Dia 21/06" tags="" position="7600,700" size="100,100">(if: $final is 0)[
 O dia da final chegou, você, sua mãe e seu pai se juntam contentes para assistir o jogo, animados vocês testemunham a conquista do tri do Brasil, ainda assim, você sente que algo está faltando
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106.jpeg&quot;&gt;
+&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106mae.jpeg&quot;&gt;
 
 Fim.
 ](else-if: $final is 1)[
 Você viu sua mãe pela última vez três dias atras, ela entrou no seu quarto de manhã e beijou a sua testa, achando que você estava dormindo. Seu pai te disse que ela e seu tio fugiram juntos, mas você sente que esse não é o caso, ela não faria isso. De qualquer maneira é o dia da final, com um gosto agridoce na boca, você e seu pai testemunham a conquista do tri. Você só consegue torcer para que sua mãe também esteja comemorando, mas uma parte de você sabe que ela não está 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106mae.jpeg&quot;&gt;
+&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106.jpeg&quot;&gt;
 
 Fim 
 ](else-if: $final is 2)[
@@ -430,7 +432,7 @@ Fim
 
 O Brasil é tri 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106.jpeg&quot;&gt;
+&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106mae.jpeg&quot;&gt;
 
 Fim 
 ](else:)[
@@ -438,7 +440,7 @@ Sem respostas, e sem o seu tio, você assiste o jogo, talvez ele esteja em outro
 
 O Brasil é tri 
 
-&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106.jpeg&quot;&gt;
+&lt;img src=&quot;https://eumsmo.github.io/twine-copa/imgs/jogo2106mae.jpeg&quot;&gt;
 
 Fim 
 ]</tw-passagedata><tw-passagedata pid="83" name="Beco assustador2" tags="" position="7600,1100" size="100,100">Esse beco sempre te assustou, e o homem que estava falando com o seu tio foi pra lá, você tem um pressentimento que é lá que você precisa ir, não tem ninguém na porta, você entra e vê algo ainda mais assustador do que a sua imaginação: Celas imundas em ambos os lados de um corredor sujo, todas vazias.  
